@@ -1,0 +1,162 @@
+/*///////////////////////////
+    css reset
+///////////////////////////*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*///////////////////////////
+    styling general
+///////////////////////////*/
+
+
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+button{
+    height: 80px;
+}
+/*///////////////////////////
+    grid setup
+///////////////////////////*/
+.result-screen{
+    grid-area: result;
+    background-color: black;
+    height: 65px;
+    color: white;
+    text-align: right;
+    font-size: 60px;
+}
+.button-c{
+    grid-area: button-c;
+}
+.button-del{
+    grid-area: button-del;
+}
+.button-÷{
+    grid-area: button-÷;
+}
+.button-7{
+    grid-area: button-7;
+}
+.button-8{
+    grid-area: button-8;
+}
+.button-9{
+    grid-area: button-9;
+}
+.button-×{
+    grid-area: button-×;
+}
+.button-4{
+    grid-area: button-4;
+}
+.button-5{
+    grid-area: button-5;
+}
+.button-6{
+    grid-area: button-6;
+}
+.button--{
+    grid-area: button--;
+}
+.button-1{
+    grid-area: button-1;
+}
+.button-2{
+    grid-area: button-2;
+}
+.button-3{
+    grid-area: button-3;
+}
+.button-plus{
+    grid-area: button-plus;
+}
+.button-c{
+    grid-area: button-c;
+}
+.button-0{
+    grid-area: button-0;
+}
+.button-equals{
+    grid-area: button-equals;
+}
+
+.content-page{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "result result result result"
+    "button-c button-c button-del button-÷"
+    "button-7 button-8 button-9 button-×"
+    "button-4 button-5 button-6 button--"
+    "button-1 button-2 button-3 button-plus"
+    "button-0 button-0 button-0 button-equals";
+}
+
+/*///////////////////////////
+    button styling
+///////////////////////////*/
+.operand-button{
+    background-color: rgba(213, 212, 212, 0.834);
+    cursor: pointer;
+}
+.operand-button:hover{
+    background-color: rgba(255, 255, 255, 0.811);
+}
+.operand-button:active{
+    background-color: rgba(92, 91, 91, 0.8);
+}
+.operator-button{
+    background-color: rgba(224,151,75,255);
+    cursor: pointer;
+}
+.operator-button:hover{
+    background-color: rgba(223,176,126,255);
+}
+.operator-button:active{
+    background-color: rgba(221,141,55,255);
+}
